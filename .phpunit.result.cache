@@ -1,0 +1,1 @@
+{"version":1,"defects":{"App\\Tests\\Command\\TranslateCommandTest::testExecute":5,"App\\Tests\\Command\\TranslateCommandTest::testInputFileDoesNotExist":5},"times":{"App\\Tests\\Command\\TranslateCommandTest::testExecute":0.029,"App\\Tests\\Command\\TranslateCommandTest::testInputFileDoesNotExist":0}}
