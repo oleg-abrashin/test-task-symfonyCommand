@@ -1,17 +1,68 @@
 
 ###> symfony/framework-bundle ###
-/.env.local
 /.env.local.php
-/.env.*.local
-/config/secrets/prod/prod.decrypt.private.php
-/public/bundles/
 /var/
-/vendor/
-/.idea/
-/.idea/*
 ###< symfony/framework-bundle ###
 
 ###> phpunit/phpunit ###
-/phpunit.xml
 .phpunit.result.cache
 ###< phpunit/phpunit ###
+
+# Symfony specific
+/app/config/parameters.yml
+/app/config/parameters.ini
+/var/*
+!/var/cache/.gitkeep
+!/var/logs/.gitkeep
+!/var/sessions/.gitkeep
+!/var/sessions/prod/.gitkeep
+
+# Cache, logs, and sessions
+/cache/
+/logs/
+/sessions/
+/var/bootstrap.php.cache
+/var/SymfonyRequirements.php
+
+# Composer vendor directory
+/vendor/
+
+# PHPStorm specific
+/.idea/
+/.idea/*
+
+# Environment variables
+/.env
+/.env.local
+/.env.*.local
+.env.local.php
+
+# Test and coverage data
+/phpunit.xml
+/phpunit.xml.dist
+/.phpunit.result.cache
+/coverage/
+
+# Misc
+.DS_Store
+Thumbs.db
+
+# Symfony Encore
+/node_modules/
+/public/build/
+/public/bundles/
+
+# Ignore built assets
+/public/assets/
+/public/js/
+/public/css/
+/public/images/
+
+# Ignore secrets
+/config/secrets/prod/prod.decrypt.private.php
+/config/secrets/test/test.decrypt.private.php
+
+# Ignore other temporary files
+*.log
+*.cache
+*.tmp
